@@ -145,6 +145,9 @@ body {
   .list__link {
     text-decoration: none; }
 
+.wrapper {
+  margin: 0 10%; }
+
 .display-header {
   font-family: 'Abril Fatface', cursive;
   color: #1f1f1f;
@@ -152,6 +155,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  letter-spacing: 1px;
   line-height: 1.15; }
   .display-header--large {
     font-family: 'Abril Fatface', cursive;
@@ -159,7 +163,9 @@ body {
     font-size: 16rem;
     text-transform: uppercase;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    letter-spacing: 1px;
+    color: white; }
 
 .primary-header {
   font-family: 'Abril Fatface', cursive;
@@ -167,7 +173,8 @@ body {
   font-size: 4.2rem;
   text-transform: uppercase;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  letter-spacing: 1px; }
   .primary-header--white {
     font-family: 'Abril Fatface', cursive;
     color: #1f1f1f;
@@ -175,6 +182,7 @@ body {
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+    letter-spacing: 1px;
     color: #f6f6f6; }
   .primary-header--medium {
     font-family: 'Abril Fatface', cursive;
@@ -182,14 +190,16 @@ body {
     font-size: 3.2rem;
     text-transform: uppercase;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    letter-spacing: 1px; }
   .primary-header--small {
     font-family: 'Abril Fatface', cursive;
     color: #1f1f1f;
     font-size: 2.4rem;
     text-transform: uppercase;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    letter-spacing: 1px; }
 
 .button {
   font-family: 'Abril Fatface', cursive;
@@ -198,6 +208,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  letter-spacing: 1px;
   text-align: center;
   line-height: 1.6;
   text-decoration: none;
@@ -211,3 +222,30 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6; }
+
+.main-header {
+  background: #345231;
+  padding-top: 20px; }
+  .main-header .main-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto; }
+  .main-header .main-nav__link {
+    font-family: 'Montserrat', sans-serif;
+    color: #1f1f1f;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.45;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px; }

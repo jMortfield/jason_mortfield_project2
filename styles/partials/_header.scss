@@ -1,0 +1,24 @@
+// TOP NAV
+.main-header {
+    background: $primaryColor;
+    padding-top: 20px;
+    .main-nav {
+        &__list {
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }
+        &__link {
+            @include secondaryFont(2rem);
+            line-height: 1.45;
+            color:white;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+// MAIN HEADER

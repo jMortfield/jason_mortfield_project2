@@ -28,6 +28,7 @@ body {
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+    letter-spacing: 1px;
 }
 
 @mixin secondaryFont($size){
@@ -38,11 +39,16 @@ body {
     padding: 0;
 }
 
+.wrapper {
+    margin: 0 10%;
+}
+
 .display-header {
     @include primaryFont(8rem);
     line-height: 1.15;
     &--large {
         @include primaryFont(16rem)
+        color: white;
     }
 }
 
