@@ -4,3 +4,73 @@ $accentColor: #e4a436;
 $blackShade:#1f1f1f;
 $whiteShade: #f6f6f6;
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &__link {
+        text-decoration: none;
+    }
+}
+
+@mixin primaryFont($size){
+    font-family: 'Abril Fatface', cursive;
+    color: $blackShade;
+    font-size: $size;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin secondaryFont($size){
+    font-family: 'Montserrat', sans-serif;
+    color: $blackShade;
+    font-size: $size;
+    margin: 0;
+    padding: 0;
+}
+
+.display-header {
+    @include primaryFont(8rem);
+    line-height: 1.15;
+    &--large {
+        @include primaryFont(16rem)
+    }
+}
+
+.primary-header {
+    @include primaryFont(4.2rem);
+    &--white {
+        @include primaryFont(4.2rem);
+        color: $whiteShade;
+    }
+    &--medium {
+         @include primaryFont(3.2rem);
+    }
+    &--small {
+         @include primaryFont(2.4rem);
+    }
+}
+
+.button {
+    @include primaryFont(2rem);
+    text-align: center;
+    line-height: 1.6;
+    text-decoration: none;
+    background: $accentColor;
+    padding: 10px;
+}
+
+.text {
+    @include secondaryFont(2rem);
+    line-height: 1.6;
+}
+

@@ -131,3 +131,83 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem; }
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .list__link {
+    text-decoration: none; }
+
+.display-header {
+  font-family: 'Abril Fatface', cursive;
+  color: #1f1f1f;
+  font-size: 8rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height: 1.15; }
+  .display-header--large {
+    font-family: 'Abril Fatface', cursive;
+    color: #1f1f1f;
+    font-size: 16rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0; }
+
+.primary-header {
+  font-family: 'Abril Fatface', cursive;
+  color: #1f1f1f;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0; }
+  .primary-header--white {
+    font-family: 'Abril Fatface', cursive;
+    color: #1f1f1f;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: #f6f6f6; }
+  .primary-header--medium {
+    font-family: 'Abril Fatface', cursive;
+    color: #1f1f1f;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0; }
+  .primary-header--small {
+    font-family: 'Abril Fatface', cursive;
+    color: #1f1f1f;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0; }
+
+.button {
+  font-family: 'Abril Fatface', cursive;
+  color: #1f1f1f;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.6;
+  text-decoration: none;
+  background: #e4a436;
+  padding: 10px; }
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  color: #1f1f1f;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; }
