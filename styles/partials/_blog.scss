@@ -6,26 +6,19 @@
         padding: 0;
     }
     &__img {
-        max-width: calc(50% - 20px);
+        max-width: calc(50%);
         position: relative;
     }
     &__content {
-        max-width: calc(45%);
+        max-width: calc(50%);
     }
     &__content--align-left {
-        margin-left: 5%;
-        padding-top: 3%;
+        padding-left: 80px;
+        padding-top: 6%;
     }
     &__content--align-right {
         text-align: right;
-        margin-right: 40px;
-    }
-    &__content--wide {
-        max-width: calc(70% - 20px);
-        margin-left: 40px;
-    }
-    &__img--small {
-        max-width: calc(30% - 20px);
+        padding-right: 80px;
     }
     &__post {
         display: flex;
@@ -45,10 +38,9 @@
             top: -50px;
         }
         &--dark-green {
-
-        }
-        &--small {
-
+            box-shadow: 170px 20px 0 $primaryColor, 20px 20px 0 $primaryColor;
+            position: relative;
+            bottom: -30px;
         }
     }
 }
