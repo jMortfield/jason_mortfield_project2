@@ -1,0 +1,48 @@
+.bottom-nav {
+    background: $whiteShade;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 2% 0 5% 0;
+    }
+    &__item {
+        max-width: 45%;
+        margin-left: 3%;
+    }
+    &__heading {
+        margin-top: 50px;
+    }
+    &__photos, &__about, &__blog, &__contact{
+        position: relative;
+        &::before {
+            content: "\f03e";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 2rem;
+            position: absolute;
+            left: -40px;
+            top: 13px;
+            z-index: 10;
+        }
+        &::after {
+            content: "";
+            height: 42px;
+            width: 42px;
+            background: $accentColor;
+            position: absolute;
+            left: -51px;
+            top: 2px;
+            border-radius: 50%;
+        }
+    }
+    &__about::before {
+        content: "\f007";
+    }
+    &__blog::before {
+        content: "\f108";
+    }
+    &__contact::before {
+        content: "\f095";
+    }
+}

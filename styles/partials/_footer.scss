@@ -1,0 +1,12 @@
+.footer {
+    color: white;
+    background: $blackShade;
+    text-align: center;
+    &__copyright {
+        margin: 0;
+        padding: 15px 0;
+        font-size: 2rem;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+}
