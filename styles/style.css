@@ -165,7 +165,8 @@ body {
     margin: 0;
     padding: 0;
     letter-spacing: 1px;
-    color: white; }
+    color: white;
+    position: relative; }
 
 .primary-header {
   font-family: 'Abril Fatface', cursive;
@@ -213,7 +214,9 @@ body {
   line-height: 1.6;
   text-decoration: none;
   background: #e4a436;
-  padding: 10px; }
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block; }
 
 .text {
   font-family: 'Montserrat', sans-serif;
@@ -249,3 +252,81 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px; }
+
+.hero-image .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 0 10%;
+  padding: 0; }
+
+.hero-image__text {
+  max-width: auto;
+  margin-right: 10px; }
+
+.hero-image__round-text {
+  position: relative;
+  top: 180px;
+  left: -50px; }
+
+.hero-image__image {
+  -webkit-box-shadow: 20px 20px 0 white;
+  box-shadow: 20px 20px 0 white;
+  position: relative;
+  top: 50px; }
+
+.about {
+  background: #f6f6f6;
+  text-align: center; }
+  .about__wrapper {
+    padding: 5% 0 10% 0; }
+
+.blog img {
+  width: 100%; }
+
+.blog__wrapper {
+  padding: 0; }
+
+.blog__img {
+  max-width: calc(50% - 20px);
+  position: relative; }
+
+.blog__content {
+  max-width: calc(45%); }
+
+.blog__content--align-left {
+  margin-left: 5%;
+  padding-top: 3%; }
+
+.blog__content--align-right {
+  text-align: right;
+  margin-right: 40px; }
+
+.blog__content--wide {
+  max-width: calc(70% - 20px);
+  margin-left: 40px; }
+
+.blog__img--small {
+  max-width: calc(30% - 20px); }
+
+.blog__post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 40px; }
+  .blog__post:first-of-type {
+    margin-top: 0; }
+  .blog__post--right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+
+.blog__img-shadow--light-green {
+  -webkit-box-shadow: 20px 20px 0 #709b6b, -170px 20px 0 #709b6b;
+  box-shadow: 20px 20px 0 #709b6b, -170px 20px 0 #709b6b;
+  position: relative;
+  top: -50px; }

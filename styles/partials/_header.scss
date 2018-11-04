@@ -22,3 +22,27 @@
 }
 
 // MAIN HEADER
+
+.hero-image {
+    .wrapper {
+        display: flex;
+        position: relative;
+        margin: 0 10%;
+        padding: 0;
+        // border: 1px red solid;
+    }
+    &__text {
+        max-width: auto;
+        margin-right: 10px;
+    }
+    &__round-text {
+        position: relative;
+        top: 180px;
+        left: -50px;
+    }
+    &__image {
+        box-shadow: 20px 20px 0 white;
+        position: relative;
+        top: 50px;
+    }
+}
