@@ -1,0 +1,15 @@
+.contact-header {
+    height: 50vh;
+    background: url(../../assets/contact-image-1.jpg);
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    &__text {
+        position: relative;
+        bottom: -17px;
+    }
+}
+
+.contact-main {
+    background: $whiteShade;
+}

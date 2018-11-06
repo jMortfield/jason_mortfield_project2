@@ -1,8 +1,14 @@
 // TOP NAV
 .main-header {
     background: $primaryColor;
-    padding-top: 20px;
+    padding-top: 50px;
     .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: $primaryColor;
+        z-index: 100;
         &__list {
             display: flex;
             width: 50%;
