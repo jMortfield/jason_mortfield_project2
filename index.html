@@ -11,7 +11,9 @@
 <body>
     <header class="main-header">
 <!-- TOP NAV STARTS -->
-        <nav class="main-nav">
+        <nav class="main-nav clearfix">
+            <input type="checkbox" id="toggle" name="toggle">
+            <label for="toggle"><i class="fas fa-bars main-nav__hamburg-menu"></i></label>
             <ul class="main-nav__list list">
                 <li class="main-nav__item list__item">
                     <a href="./index.html" class="main-nav__link list__link">Home</a>
@@ -19,7 +21,7 @@
                 <li class="main-nav__item list__item">
                     <a href="#about" class="main-nav__link list__link">About</a>
                 </li>
-                <li class="main-nav__item list__item">
+                <li class="main-nav__item list__item list__item--willow">
                     <a href="./index.html" class="main-nav__link list__link">
                         <h2 class="primary-header--white">Willow</h2>
                     </a>
@@ -39,7 +41,9 @@
                     <img src="./assets/circle-text.png" alt="Daily musings of" class="hero-image__round-text">
                     <h1 class="display-header--large">Willow</h1>
                 </div>
-                <img src="./assets/home-image-1.jpg" alt="A picture of Willow looking off into the distance" class="hero-image__image">
+                <div class="hero-image__container">
+                    <img src="./assets/home-image-1.jpg" alt="A picture of Willow looking off into the distance" class="hero-image__image">
+                </div>
             </div>
         </section>
     </header>

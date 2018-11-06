@@ -41,21 +41,32 @@
     </header>
 
     <main class="contact-main">
-        <div class="wrapper">
-            <aside class="contact__aside">
-                <div class="contact__aside__social-media">
-
+        <div class="contact-main__wrapper wrapper">
+            <aside class="contact-main__aside">
+                <div class="contact-main__social-media">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>       
                 </div>
-                <address class="contact__aside__contact-info">
-
+                <div>
+                    <a href="mailto:info@email.com" class="contact-main__email text">info@email.com</a>
+                </div>
+                <address>
+                    <ul class="contact-main__address text">
+                        <li><a href="tel:123-456-7890" class="text">123-456-7890</a></li>
+                        <li>123 Queen Street West, Unit 10</li>
+                        <li>Toronto, Ontario</li>
+                        <li>M5V2DS</li>
+                    </ul>
                 </address>
             </aside>
-                <form action="" class="form">
-                    <input type="text" placeholder="Name" class="form__name text">
-                    <input type="email" placeholder="Email address" class="form__email text">
-                    <textarea name="" id="" cols="30" rows="10" class="form__text-area text" placeholder="Message"></textarea>
-                    <button class="form__button button">Submit</button>
-                </form>
+            <form action="" class="contact-main__form form">
+                <input type="text" placeholder="Name" class="form__name contact-main__form__name text">
+                <input type="email" placeholder="Email address" class="form__email contact-main__form__email text">
+                <textarea name="" id="" cols="30" rows="10" class="form__text-area text" placeholder="Message"></textarea>
+                <button class="form__button button">Submit</button>
+            </form>
         </div>
     </main>
 <!-- FOOTER STARTS -->

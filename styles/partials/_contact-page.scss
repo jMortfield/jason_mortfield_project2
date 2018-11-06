@@ -1,6 +1,7 @@
 .contact-header {
     height: 50vh;
     background: url(../../assets/contact-image-1.jpg);
+    background-size: cover;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -12,4 +13,33 @@
 
 .contact-main {
     background: $whiteShade;
+    &__wrapper {
+        display: flex;
+        padding: 6% 0;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__aside {
+        background: white;
+        width: 28%;
+        padding: 40px 30px;
+    }
+    &__social-media {
+        .fab {
+            font-size: 3.4rem;
+            padding: 0 20px 20px 0;
+            color: $blackShade;
+        }
+    }
+    &__address {
+        list-style: none;
+    }
+    &__form {
+        padding-top: 0;
+        margin-top: 0;
+        width: 70%;
+        &__name, &__email {
+            margin-top: 0;
+        }
+    }
 }

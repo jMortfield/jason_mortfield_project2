@@ -141,6 +141,9 @@ body {
 a {
   text-decoration: none; }
 
+input[type="checkbox"] {
+  display: none; }
+
 .icon::before {
   display: inline-block;
   font-style: normal;
@@ -308,6 +311,14 @@ a {
       text-transform: uppercase;
       font-weight: bold;
       letter-spacing: 1px; }
+    .main-header .main-nav__hamburg-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 5rem;
+      color: #e4a436;
+      display: none;
+      z-index: 1000; }
 
 .hero-image .wrapper {
   display: -webkit-box;
@@ -318,19 +329,98 @@ a {
   padding: 0; }
 
 .hero-image__text {
-  max-width: auto;
-  margin-right: 10px; }
+  margin-right: 20px;
+  width: 65%; }
 
 .hero-image__round-text {
   position: relative;
   top: 180px;
   left: -50px; }
 
+.hero-image__container {
+  width: 32%; }
+
 .hero-image__image {
   -webkit-box-shadow: 20px 20px 0 white;
   box-shadow: 20px 20px 0 white;
   position: relative;
-  top: 50px; }
+  top: 50px;
+  width: 100%; }
+
+@media (max-width: 1330px) {
+  .hero-image .wrapper {
+    margin: 0 8%; }
+  .hero-image__round-text {
+    width: 120px;
+    top: 155px;
+    left: -45px; }
+  .display-header--large {
+    font-size: 14rem; } }
+
+@media (max-width: 1230px) {
+  .main-header .main-nav__list {
+    width: 70%; } }
+
+@media (max-width: 1130px) {
+  .hero-image__round-text {
+    width: 100px;
+    top: 135px;
+    left: -35px; }
+  .display-header--large {
+    font-size: 12rem; } }
+
+@media (max-width: 980px) {
+  .list__item--willow {
+    display: none; }
+  .main-header {
+    padding-top: 0; }
+    .main-header .main-nav {
+      left: auto; }
+      .main-header .main-nav__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 350px;
+        background: #709b6b;
+        height: 100vh;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        padding: 80px 0;
+        position: relative;
+        display: none; }
+      .main-header .main-nav__link {
+        font-size: 3.5rem; }
+      .main-header .main-nav__hamburg-menu {
+        display: inline-block;
+        cursor: pointer; }
+  .hero-image {
+    height: 100vh;
+    background: url(../../assets/home-image-1.jpg);
+    background-size: cover;
+    background-position: center; }
+    .hero-image__text {
+      margin: auto;
+      margin-top: 10%; }
+    .hero-image__round-text {
+      width: 130px;
+      top: 167px;
+      left: -48px; }
+    .hero-image__container {
+      display: none; }
+    .hero-image .wrapper {
+      margin: 0;
+      height: 100vh;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)));
+      background: -webkit-linear-gradient(top rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+      background: -o-linear-gradient(top rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+      background: linear-gradient(to bottom rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); }
+    .hero-image .display-header--large {
+      font-size: 15rem; }
+  #toggle:checked ~ .main-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .about {
   background: #f6f6f6;
@@ -509,6 +599,7 @@ a {
 .main-blog-header {
   height: 50vh;
   background: url(../../assets/blog-image-1.jpg);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,6 +697,7 @@ a {
 .contact-header {
   height: 50vh;
   background: url(../../assets/contact-image-1.jpg);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,3 +711,30 @@ a {
 
 .contact-main {
   background: #f6f6f6; }
+  .contact-main__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 6% 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .contact-main__aside {
+    background: white;
+    width: 28%;
+    padding: 40px 30px; }
+  .contact-main__social-media .fab {
+    font-size: 3.4rem;
+    padding: 0 20px 20px 0;
+    color: #1f1f1f; }
+  .contact-main__address {
+    list-style: none; }
+  .contact-main__form {
+    padding-top: 0;
+    margin-top: 0;
+    width: 70%; }
+    .contact-main__form__name, .contact-main__form__email {
+      margin-top: 0; }
