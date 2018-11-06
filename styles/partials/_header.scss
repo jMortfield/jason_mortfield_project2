@@ -47,9 +47,8 @@
         // border: 1px red solid;
     }
     &__text {
-        // max-width: 70%;
         margin-right: 20px;
-        width: 65%;
+        max-width: 65%;
     }
     &__round-text {
         position: relative;
@@ -119,6 +118,8 @@
                 padding: 80px 0;
                 position: relative;
                 display: none;
+                right: -500px;
+                transition: right 1s;
             }
             &__link {
                 font-size: 3.5rem;
@@ -157,5 +158,46 @@
     }
     #toggle:checked ~ .main-nav__list {
         display: flex;
+        right: 0;
     }
+}
+
+@media (max-width: 830px) {
+    .hero-image {
+        .display-header--large {
+            font-size: 9rem;
+        }
+        &__round-text {
+            width: 80px;
+            top: 100px;
+            left: -35px;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .hero-image {
+        .display-header--large {
+            font-size: 7rem;
+        }
+        &__round-text {
+            width: 60px;
+            top: 80px;
+            left: -25px;
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .hero-image {
+        .display-header--large {
+            font-size: 5rem;
+            padding-top: 20%;
+        }
+        &__round-text {
+            width: 45px;
+            top: 100px;
+            left: -20px;
+        }
+    } 
 }

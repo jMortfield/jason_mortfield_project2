@@ -46,3 +46,25 @@
         content: "\f095";
     }
 }
+
+@media (max-width: 730px) {
+    .bottom-nav {
+        &__wrapper {
+            flex-direction: column;
+            padding-top: 1%;
+        }
+        &__item {
+            max-width: 100%;
+            text-align: center;
+            margin: 0;
+        }
+        &__photos, &__about, &__blog, &__contact{
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

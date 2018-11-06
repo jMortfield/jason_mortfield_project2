@@ -134,3 +134,15 @@ input[type="checkbox"] {
         width: 100%;
     }
 }
+
+@media (max-width: 730px) {
+    .wrapper {
+        margin: 0 3%;
+    }
+}
+
+@media (max-width: 560px) {
+    .wrapper {
+        margin: 0;
+    }
+}
