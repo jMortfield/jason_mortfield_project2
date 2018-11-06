@@ -466,6 +466,10 @@ input[type="checkbox"] {
   .about__wrapper {
     padding: 6% 0 10% 0; }
 
+@media (max-width: 410px) {
+  .about__wrapper {
+    margin: 0 2%; } }
+
 .blog img {
   width: 100%; }
 
@@ -719,7 +723,8 @@ input[type="checkbox"] {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 1%; }
+    padding-top: 1%;
+    margin: 0 2%; }
   .bottom-nav__item {
     max-width: 100%;
     text-align: center;
