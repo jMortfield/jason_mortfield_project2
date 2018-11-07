@@ -4,6 +4,10 @@ $accentColor: #e4a436;
 $blackShade:#1f1f1f;
 $whiteShade: #f6f6f6;
 
+* {
+    transition: color 0.4s;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -76,6 +80,9 @@ input[type="checkbox"] {
     &--white {
         @include primaryFont(4.2rem);
         color: $whiteShade;
+        &:hover {
+            color: $accentColor;
+        }
     }
     &--medium {
          @include primaryFont(3.2rem);
@@ -97,6 +104,9 @@ input[type="checkbox"] {
     padding: 10px 20px;
     margin-top: 20px;
     display: inline-block;
+    &:hover {
+        color: $primaryLight;
+    }
 }
 
 .text {
@@ -144,5 +154,17 @@ input[type="checkbox"] {
 @media (max-width: 560px) {
     .wrapper {
         margin: 0;
+    }
+    .form {
+        margin: 0 3%;
+        &__name {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        &__name, &__email {
+            width: 100%;
+            padding: 30px 0;
+            padding-left: 30px;
+        }
     }
 }

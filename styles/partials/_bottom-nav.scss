@@ -12,6 +12,9 @@
     }
     &__heading {
         margin-top: 50px;
+        &:hover {
+            color: $primaryLight;
+        }
     }
     &__photos, &__about, &__blog, &__contact{
         position: relative;
